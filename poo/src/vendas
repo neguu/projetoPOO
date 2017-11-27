@@ -1,0 +1,6 @@
+ public class void  venda {
+    String data_vend;
+    double valor_vend;
+    
+   
+ }

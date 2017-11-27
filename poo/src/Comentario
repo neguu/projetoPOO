@@ -1,0 +1,15 @@
+public class comentario {
+ protected boolean comentario_privado;
+  public String texto;
+  private String data;
+  public String usuario;
+  
+  
+  
+}
+public String comentar{
+  
+}
+public void excluirComentario{
+  
+}
