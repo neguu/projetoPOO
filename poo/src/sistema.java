@@ -1,12 +1,6 @@
 public class sistema{
 
-     public static void main(String []args){
-        System.out.println("Hello World");
-        Usuario user = new Usuario();
-        System.out.println(user.cadastrar());
-        
-     }
-}
+
 public String cadastrar() {
 		Scanner l = new Scanner(System.in);
 		System.out.println("BEM VINDO AO CADASTRO DE USUÁRIOS");
@@ -24,7 +18,7 @@ public String cadastrar() {
 		
 		usuario.setNome(nome);
 		usuario.setLogin(login);
-;		usuario.setIdade(idade);
+		usuario.setIdade(idade);
 		usuario.setSenha(senha);
 		ArrayList<Usuario> usuarios = new ArrayList<Usuario>();
 		usuarios.add(usuario);
@@ -32,3 +26,4 @@ public String cadastrar() {
 		
 		return usuario.toString();
 	}
+}
