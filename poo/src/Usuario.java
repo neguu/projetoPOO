@@ -6,8 +6,8 @@ public class Usuario {
 	public String login;
 	protected int idade;
 	protected String senha;
-	protected String localizaÁ„o;
-	protected char sexo;
+	protected String localiza√ß√£o;
+	protected String sexo;
 
 	public void fazerAmizade() {
 
@@ -18,16 +18,18 @@ public class Usuario {
 	}
 
 	public String cadastrar() {
-		Scanner l = new Scanner(System.in);
-		System.out.println("BEM VINDO AO CADASTRO DE USU¡RIOS");
+		leitor = new Scanner(System.in);
+		System.out.println("BEM VINDO AO CADASTRO DE USU√ÅRIOS");
 		System.out.println("Digite os dados: " + "\nNome ");
-		String nome = l.next();
+		String nome = .leitor.next();
 		System.out.println("Login desejado ");
-		String login = l.next();
+		String login = leitor.next();
 		System.out.println("idade");
-		int idade = l.nextInt();
-		System.out.println("Senha de acesso");
-		String senha = l.next();
+		int idade = leitor.nextInt();
+		System.out.println("digite sua Senha de acesso");
+		String senha = leitor.next();
+		System.out.println("digite seu sexo");
+		String sexo = leitor.next();
 		
 		Usuario usuario = new Usuario();
 		
@@ -45,8 +47,8 @@ public class Usuario {
 
 	@Override
 	public String toString() {
-		return "Usuario [nome=" + nome + ", login=" + login + ", idade=" + idade + ", senha=" + senha + ", localizaÁ„o="
-				+ localizaÁ„o + ", sexo=" + sexo + "]";
+		return "Usuario [nome=" + nome + ", login=" + login + ", idade=" + idade + ", senha=" + senha + ", localiza√ß√£o="
+				+ localiza√ß√£o + ", sexo=" + sexo + "]";
 	}
 
 	public String getNome() {
@@ -65,15 +67,15 @@ public class Usuario {
 	
 	
 
-	public String getLocalizaÁ„o() {
-		return localizaÁ„o;
+	public String getLocaliza√ß√£o() {
+		return localiza√ß√£o;
 	}
 	
 	
 	
 
-	public void setLocalizaÁ„o(String localizaÁ„o) {
-		this.localizaÁ„o = localizaÁ„o;
+	public void setLocaliza√ß√£o(String localiza√ß√£o) {
+		this.localiza√ß√£o = localiza√ß√£o;
 	}
 	
 	
@@ -86,7 +88,7 @@ public class Usuario {
 	
 	
 
-	public void setSexo(char sexo) {
+	public void setSexo(String sexo) {
 		this.sexo = sexo;
 	}
 	
@@ -120,7 +122,7 @@ public class Usuario {
 	
 	
 
-	public void configuraÁ„oPrivacidade() {
+	public void configura√ß√£oPrivacidade() {
 
 	}
 	
