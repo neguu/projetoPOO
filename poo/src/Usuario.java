@@ -6,7 +6,6 @@ public class Usuario {
 	public String login;
 	protected int idade;
 	protected String senha;
-	protected String localização;
 	protected String sexo;
 
 	public void fazerAmizade() {
@@ -18,10 +17,10 @@ public class Usuario {
 	}
 
 	public String cadastrar() {
-		leitor = new Scanner(System.in);
+		Scanner leitor = new Scanner(System.in);
 		System.out.println("BEM VINDO AO CADASTRO DE USUÁRIOS");
 		System.out.println("Digite os dados: " + "\nNome ");
-		String nome = .leitor.next();
+		String nome = leitor.next();
 		System.out.println("Login desejado ");
 		String login = leitor.next();
 		System.out.println("idade");
@@ -38,6 +37,7 @@ public class Usuario {
 		usuario.setLogin(login);
 ;		usuario.setIdade(idade);
 		usuario.setSenha(senha);
+		usuario.setSexo(sexo);
 		ArrayList<Usuario> usuarios = new ArrayList<Usuario>();
 		usuarios.add(usuario);
 		System.out.println(usuario.getNome() + "\n" + usuario.getLogin() + "\n" + usuario.getIdade());
@@ -47,8 +47,8 @@ public class Usuario {
 
 	@Override
 	public String toString() {
-		return "Usuario [nome=" + nome + ", login=" + login + ", idade=" + idade + ", senha=" + senha + ", localização="
-				+ localização + ", sexo=" + sexo + "]";
+		return "Usuario [nome=" + nome + ", login=" + login + ", idade=" + idade + ", senha=" + senha + 
+			 ", sexo=" + sexo + "]";
 	}
 
 	public String getNome() {
@@ -67,21 +67,17 @@ public class Usuario {
 	
 	
 
-	public String getLocalização() {
-		return localização;
-	}
+	
 	
 	
 	
 
-	public void setLocalização(String localização) {
-		this.localização = localização;
-	}
+	
 	
 	
 	
 
-	public char getSexo() {
+	public String getSexo() {
 		return sexo;
 	}
 	
